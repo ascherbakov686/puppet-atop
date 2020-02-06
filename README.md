@@ -32,8 +32,8 @@ class { 'atop':
   interval       => 120,
   logpath        => '/var/log/myatop/atop',
   confpath       => '/etc/sysconfig/atop',
-  $rotate_count  => '1',
-  $rotate_days   => '+6',
+  rotate_count  => '1',
+  rotate_days   => '+6',
 }
 ```
 
@@ -53,10 +53,10 @@ Path do snapshots logging. Default: `/var/log/atop`
 ##### `confpath`
 Path do snapshots logging. Default: `/etc/sysconfig/atop`
 
-#### `rotate_count`
+##### `rotate_count`
 Number of saved log files
 
-#### `rotate_days`
+##### `rotate_days`
 Remove old files
 
 ##Development
