@@ -1,0 +1,1 @@
+#https://github.com/alexharv074/puppet-spacewalk/blob/master/spec/classes/spacewalk_server_spec.rb

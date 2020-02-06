@@ -1,0 +1,12 @@
+<%= $atop::logpath %>/atop_20[0-9][0-9][0-9][0-9][0-9][0-9] {
+    missingok
+    daily
+    nodateext
+    rotate <%= $atop::rotate_count %>
+    ifempty
+    nocreate
+    postrotate
+      /usr/bin/find <%= $atop::logpath %> -maxdepth 1 -mount -name atop_20\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\* -mtime <%= $atop::rotate_days %> -exec -delete;
+    endscript
+}
+

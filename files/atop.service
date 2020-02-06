@@ -1,0 +1,12 @@
+[Unit]
+Description=Atop advanced performance monitor
+Documentation=man:atop(1)
+
+[Service]
+PIDFile=/var/run/atop.pid
+ExecStart=/usr/bin/atopd
+ExecStop=/bin/rm -f /var/run/atop.pid
+
+[Install]
+WantedBy=multi-user.target
+
