@@ -1,4 +1,4 @@
-<%= $atop::logpath %>/atop_20[0-9][0-9][0-9][0-9][0-9][0-9] {
+<%= $atop::logpath %>/atop_* {
     missingok
     daily
     nodateext
